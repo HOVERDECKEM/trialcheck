@@ -1,0 +1,238 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+.account-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.account-buttons button {
+    background-color: #f1c40f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.account-buttons button:hover {
+    background-color: #e67e22;
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a:hover {
+    color: #f1c40f;
+  }
+  
+  nav button {
+    background-color: #f1c40f;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  
+  /* Banner Styles */
+  .banner {
+    height: 500px;
+    background-image: url('https://images.unsplash.com/photo-1607124923417-20ca31e48a8a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dHJhdmVsbWVudHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .banner h1 {
+    font-size: 64px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .banner p {
+    font-size: 24px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  /* Destinations Styles */
+  .destinations {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .destinations h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .destinations ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .destinations li {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .destinations img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .destinations h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .destinations p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  .destination a {
+    display: block;
+    position: relative;
+  }
+  
+  .destination a:hover img {
+    transform: scale(1.1);
+  }
+  
+  .destination .destination-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .destination .destination-info h3 {
+    margin-top: 0;
+  }
+  
+  .destination a:hover .destination-info {
+    opacity: 1;
+  }
+  
+  .destination .destination-info p {
+    margin-bottom: 0;
+  }
+  
+  .destination .destination-info .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+  

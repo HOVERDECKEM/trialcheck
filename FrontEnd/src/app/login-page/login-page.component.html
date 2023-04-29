@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+
+	<form>
+		<h1>Login Form</h1>
+
+		<label for="email"  >Email:</label>
+		<input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" name="email" id="email"  required>
+
+		<label for="password" >Password:</label>
+		<input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" name="password" id="password" required>
+
+		<button type="submit" (click)="login()" >Login</button>
+	</form>
+</body>
+</html> 

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>GoTravel</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<script>
+		$(document).ready(function () {
+			$('.slider').slick({
+				dots: true,
+				arrows: false,
+				autoplay: true,
+				autoplaySpeed: 3000
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<nav style="background-color: black;">
+		<ul>
+			<li><a style="color: #f1c40f" href="#">GoTravel Agency</a></li>
+		</ul>
+		<div class="account-buttons">
+			<button routerLink="/login">Sign In</button>
+			<button routerLink="/register">Sign Up</button>
+		</div>
+	</nav>
+	<header>
+		<div class="logo">
+			<a href="#" class="slogan">Escape the ordinary, explore the extraordinary!</a>
+		</div>
+		<nav class="navbar">
+			<ul>
+				<li class="items"><a href="#">Home</a></li>
+				<li class="items"><a href="#dest">Destinations</a></li>
+				<li class="items"><a href="#contactus">Contact Us</a></li>
+				<li class="items"><a href="#reviews">Reviews</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="hero">
+			<section class="slider">
+				<div class="slider-container">
+				  <div class="slider-slide">
+					<img src="assets/nature1.jpg" alt="Slider Image 1">
+				  </div>
+				  <div class="slider-slide">
+					<img src="assets/nature2.jpg" alt="Slider Image 2">
+				  </div>
+				  <div class="slider-slide">
+					<img src="assets/nature3.jpg" alt="Slider Image 3">
+				  </div>
+				</div>
+				<!-- <div class="slider-controls">
+				  <button class="slider-prev">Prev</button>
+				  <button class="slider-next">Next</button>
+				</div> -->
+			  </section>
+			  
+			  
+			  
+		</section>
+		<section class="destinations"  id="dest">
+			<h2>Popular Destinations</h2>
+			<div class="destination-card">
+				<img src="assets/paris.jpeg"
+					alt="Destination 1">
+				<h3>Paris, France</h3>
+				<p>From ₹1,00,000</p>
+				<a href="#">Book Now</a>
+			</div>
+			<div class="destination-card">
+				<img src="assets/tokyo.jpeg"
+					alt="Destination 2">
+				<h3>Tokyo, Japan</h3>
+				<p>From ₹1,20,000</p>
+				<a href="#">Book Now</a>
+			</div>
+			<div class="destination-card">
+				<img src="assets/sydney.jpeg"
+					alt="Destination 3">
+				<h3>Sydney, Australia</h3>
+				<p>From ₹1,50,000</p>
+				<a href="#">Book Now</a>
+			</div>
+		</section>
+		<section class="testimonials" id="reviews">
+			<h2>What Our Clients Say</h2>
+			<div class="testimonial-card">
+				<img src="https://randomuser.me/api/portraits/women/17.jpg" alt="Client 1">
+				<p>"I had a wonderful experience booking my vacation with this company. The staff was helpful and
+					accommodating. The trip exceeded my expectations and I would definitely book with them again."</p>
+				<h4>Emily Johnson</h4>
+			</div>
+			<div class="testimonial-card">
+				<img src="https://randomuser.me/api/portraits/men/78.jpg" alt="Client 2">
+				<p>"I am very happy with the service provided by this company. They helped me plan the perfect vacation
+					for me and my family. The accommodations were fantastic and the activities were so much fun. Highly
+					recommend!"</p>
+				<h4>John Smith</h4>
+			</div>
+			<div class="testimonial-card">
+				<img src="https://randomuser.me/api/portraits/women/53.jpg" alt="Client 3">
+				<p>"I was a bit hesitant to book with a new company, but I'm so glad I did. The trip was amazing and the
+					staff went above and beyond to ensure we had a great time. Can't wait to book my next vacation with
+					them!"</p>
+				<h4>Jessica Lee</h4>
+			</div>
+		</section>
+		<section style="margin: auto; align-items: center; justify-content: center;" class="contact" id="contactus">
+			<h2 >Contact Us</h2>
+			<form>
+
+				<label class="custom-field">
+					<input type="text" required />
+					<span class="placeholder">Name</span>
+				  </label>
+
+				  <label class="custom-field">
+					<input type="text" required />
+					<span class="placeholder">E-mail</span>
+				  </label>
+				  <br>
+				<label for="message" style="margin-left: -15px;">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<button style="margin-left: 160px;">Send Message</button>
+
+			</form>
+			
+		</section>
+		<div class="contact-info">
+			<h4>Visit Us</h4>
+			<p>Pimpri Chinchwad college of Engineering, Pune, IN</p>
+			<h4>Call Us</h4>
+			<p>+91 5789512987</p>
+			<h4>Email Us</h4>
+			<p>info@gotravel.com</p>
+		</div>
+	</main>
+</body>
+
+</html>
